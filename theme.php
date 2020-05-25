@@ -32,6 +32,11 @@ global $Wcms;
 	<link href="<?= $Wcms->asset('assets/vendor/venobox/venobox.css') ?>" rel="stylesheet">
 	<link href="<?= $Wcms->asset('assets/css/style.css') ?>" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<?php if($Wcms->loggedIn) { ?>
+		<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/adminPanel.bootstrap.min.css') ?>" />
+		<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/node-editor.bootstrap.min.css') ?>" />
+		<link rel="stylesheet" href="<?= $Wcms->asset('assets/css/note-popover.bootstrap.min.css') ?>" />
+	<?php } ?>
 	<?= $Wcms->css() ?>
 	<script>
         (function(w, d, s, l, i) {
