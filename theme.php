@@ -1,42 +1,38 @@
 <?php
-
 global $Wcms;
-
 ?>
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title><?= $Wcms->get('config', 'siteTitle') ?></title>
-        <meta name="description" content="<?= $Wcms->page('description') ?>">
-        <meta name="keywords" content="<?= $Wcms->page('keywords') ?>">
-
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--OG Meta Tags-->
-		<meta property="og:locale" content="en_US">
-		<meta property="og:type" content="profile">
-		<meta property="og:title" content="<?= $Wcms->get('config', 'siteTitle') ?>">
-		<meta property="og:description" content="<?= $Wcms->page('description') ?>">
-		<meta property="og:url" content="<?= $Wcms->url() ?>">
-		<meta property="og:image" content="<?= $Wcms->asset('assets/img/avatar.jpg') ?>">
-		<meta property="og:image:type" content="image/jpg">
-		<meta property="og:image:width" content="200">
-		<meta property="og:image:height" content="200">
-		<meta property="og:image:alt" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
-		<meta property="profile:first_name" content="cagatay">
-		<meta property="profile:last_name" content="guley">
-		<link href="<?= $Wcms->asset('assets/img/avatar.jpg') ?>" rel="icon" sizes="180x180" type="image/jpg">
-		<link href="<?= $Wcms->asset('assets/img/avatar.jpg') ?>" rel="apple-touch-icon">
-		<link rel="canonical" href="<?= $Wcms->url() ?>">
-		<link href="<?= $Wcms->asset('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
-		<link href="<?= $Wcms->asset('assets/vendor/icofont/icofont.min.css') ?>" rel="stylesheet">
-		<link href="<?= $Wcms->asset('assets/vendor/remixicon/remixicon.css') ?>" rel="stylesheet">
-		<link href="<?= $Wcms->asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
-		<link href="<?= $Wcms->asset('assets/vendor/boxicons/css/boxicons.min.css') ?>" rel="stylesheet">
-		<link href="<?= $Wcms->asset('assets/vendor/venobox/venobox.css') ?>" rel="stylesheet">
-		<link href="<?= $Wcms->asset('assets/css/style.css') ?>" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-		<?= $Wcms->css() ?>
+<head>
+	<title><?= $Wcms->get('config', 'siteTitle') ?></title>
+	<meta name="description" content="<?= $Wcms->page('description') ?>">
+	<meta name="keywords" content="<?= $Wcms->page('keywords') ?>">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="profile">
+	<meta property="og:title" content="<?= $Wcms->get('config', 'siteTitle') ?>">
+	<meta property="og:description" content="<?= $Wcms->page('description') ?>">
+	<meta property="og:url" content="<?= $Wcms->url() ?>">
+	<meta property="og:image" content="<?= $Wcms->asset('assets/img/avatar.jpg') ?>">
+	<meta property="og:image:type" content="image/jpg">
+	<meta property="og:image:width" content="200">
+	<meta property="og:image:height" content="200">
+	<meta property="og:image:alt" content="<?= $Wcms->get('config', 'siteTitle') ?>" />
+	<meta property="profile:first_name" content="cagatay">
+	<meta property="profile:last_name" content="guley">
+	<link href="<?= $Wcms->asset('assets/img/avatar.jpg') ?>" rel="icon" sizes="180x180" type="image/jpg">
+	<link href="<?= $Wcms->asset('assets/img/avatar.jpg') ?>" rel="apple-touch-icon">
+	<link rel="canonical" href="<?= $Wcms->url() ?>">
+	<link href="<?= $Wcms->asset('assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+	<link href="<?= $Wcms->asset('assets/vendor/icofont/icofont.min.css') ?>" rel="stylesheet">
+	<link href="<?= $Wcms->asset('assets/vendor/remixicon/remixicon.css') ?>" rel="stylesheet">
+	<link href="<?= $Wcms->asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css') ?>" rel="stylesheet">
+	<link href="<?= $Wcms->asset('assets/vendor/boxicons/css/boxicons.min.css') ?>" rel="stylesheet">
+	<link href="<?= $Wcms->asset('assets/vendor/venobox/venobox.css') ?>" rel="stylesheet">
+	<link href="<?= $Wcms->asset('assets/css/style.css') ?>" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<?= $Wcms->css() ?>
 	<script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -52,13 +48,12 @@ global $Wcms;
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WG4Z2F9');
-    </script>
-
-	</head>
+	</script>
+</head>
 	
-	<body>
-    <?= $Wcms->settings() ?>
-	<?= $Wcms->alerts() ?>
+<body>
+<?= $Wcms->settings() ?>
+<?= $Wcms->alerts() ?>
 
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -147,22 +142,19 @@ global $Wcms;
     <div class="credits">
 	<?= $Wcms->footer() ?>
     </div>
-    <!-- Vendor JS Files -->
-    <script src="<?= $Wcms->asset('assets/vendor/jquery/jquery.min.js') ?>"></script>
+<!-- Vendor JS Files -->
+	<script src="<?= $Wcms->asset('assets/vendor/jquery/jquery.min.js') ?>"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 	<script src="<?= $Wcms->asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/jquery.easing/jquery.easing.min.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/php-email-form/validate.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/waypoints/jquery.waypoints.min.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/counterup/counterup.min.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/owl.carousel/owl.carousel.min.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
-    <script src="<?= $Wcms->asset('assets/vendor/venobox/venobox.min.js') ?>"></script>
-	
-    <!-- Template Main JS File -->
-    <script src="<?= $Wcms->asset('assets/js/main.js') ?>"></script>
-
-    <script type="application/ld+json">{"@context":"http://schema.org/","@type":"Person","name":"Cagatay Guley","jobTitle":"Mining Engineering","address":{"@type":"PostalAddress","addressLocality":"Istanbul","addressRegion":"Besiktas"}}</script>
+	<script src="<?= $Wcms->asset('assets/vendor/jquery.easing/jquery.easing.min.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/vendor/php-email-form/validate.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/vendor/waypoints/jquery.waypoints.min.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/vendor/counterup/counterup.min.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/vendor/owl.carousel/owl.carousel.min.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/vendor/venobox/venobox.min.js') ?>"></script>
+	<script src="<?= $Wcms->asset('assets/js/main.js') ?>"></script>
+	<script type="application/ld+json">{"@context":"http://schema.org/","@type":"Person","name":"Cagatay Guley","jobTitle":"Mining Engineering","address":{"@type":"PostalAddress","addressLocality":"Istanbul","addressRegion":"Besiktas"}}</script>
 	<?= $Wcms->js() ?>
 </body>
 </html>
