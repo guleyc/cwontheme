@@ -147,7 +147,6 @@ global $Wcms;
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 	<script src="<?= $Wcms->asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 	<script src="<?= $Wcms->asset('assets/vendor/jquery.easing/jquery.easing.min.js') ?>"></script>
-	<script src="<?= $Wcms->asset('assets/vendor/php-email-form/validate.js') ?>"></script>
 	<script src="<?= $Wcms->asset('assets/vendor/waypoints/jquery.waypoints.min.js') ?>"></script>
 	<script src="<?= $Wcms->asset('assets/vendor/counterup/counterup.min.js') ?>"></script>
 	<script src="<?= $Wcms->asset('assets/vendor/owl.carousel/owl.carousel.min.js') ?>"></script>
